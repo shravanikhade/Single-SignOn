@@ -3,8 +3,8 @@ const GoogleStrategy=require("passport-google-oauth20").Strategy;
 const  callback_url="http://localhost:3000/google/callback";
 
 passport.use(new GoogleStrategy({
-    clientID:'536543738969-smu3nl9ekfn95fi7fnntsu3kf2ivhtfq.apps.googleusercontent.com',
-    clientSecret:'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',
+    clientID:googleClientID,
+    clientSecret:googleClientSecret,
     callbackURL:callback_url,
     scope:['email','profile'],
     passReqToCallback:true
